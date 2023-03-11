@@ -41,7 +41,7 @@
 <body class="bg-light">
 
 	<!-- Barra de navegación -->
-	<nav class="navbar navbar-expand-lg bg-primary sticky-top">
+	<nav class="navbar navbar-expand-lg bg-primary sticky-top" id="nav">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><img src="./media/img/navicon.png" width="35"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -71,6 +71,19 @@
 							<li><a class="dropdown-item" href="#contacto">Contáctame</a></li>
 						</ul>
 					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Temas
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end fade center" aria-labelledby="navbarDropdown">
+							<div class="row row-cols-2">
+							  <li><button class="btn btn-danger my-2 my-sm-0" onclick="rojo()">Rojo</button></li>
+							  <li><button class="btn btn-success my-2 my-sm-0" onclick="verde()">Verde</button></li>
+							  <li><button class="btn btn-primary my-2 my-sm-0" onclick="azul()">Azul</button></li>
+							  <li><button class="btn btn-warning my-2 my-sm-0" onclick="reiniciar()">Base</button></li>
+							</div>
+						</ul>						  
+					</li>  
 				</ul>
 			</div>
 		</div>
@@ -305,7 +318,7 @@
 	</section>
 
 	<!-- Pie de página -->
-	<footer class="bg-primary">
+	<footer class="bg-primary" id="footer">
 		<!-- Redes sociales -->
 		<div class="container">
 			<div class="row">
