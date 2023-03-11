@@ -48,3 +48,9 @@ En mi carrera de desarrollo de aplicaciones multiplataforma he aprendido a traba
 ### Contáctame
 
 En esta sección encontrarás información sobre cómo contactarme.
+
+### Se ha añadido al portfolio todo el javascript de la página web
+
+- Sistema de temas con diferentes colores
+- Sistema de ocultar/mostrar cards
+- Sistema de verificación de campos de formulario
