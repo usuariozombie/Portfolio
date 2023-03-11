@@ -46,6 +46,16 @@ nav ul li a:hover {
   transition: all 0.5s;
 }
 
+.dropdown-menu li {
+  margin: 0 !important;
+}
+
+.dropdown-menu button {
+  margin: 0 !important;
+  display: block !important;
+  width: 100% !important;
+}
+
 .dropdown-menu a:hover {
   background: #721899;
   transition: 0.5s;
@@ -315,7 +325,7 @@ p {
 
 .button {
   display: inline-flex;
-  background-color: #721899 !important;
+  background-color: #721899;
   height: 40px;
   width: 150px;
   color: #BFC0C0;
