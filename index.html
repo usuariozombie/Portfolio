@@ -41,7 +41,7 @@
 <body class="bg-light">
 
 	<!-- Barra de navegación -->
-	<nav class="navbar navbar-expand-lg bg-primary sticky-top">
+	<nav class="navbar navbar-expand-lg bg-primary sticky-top" id="nav">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><img src="./media/img/navicon.png" width="35"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -71,6 +71,19 @@
 							<li><a class="dropdown-item" href="#contacto">Contáctame</a></li>
 						</ul>
 					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Temas
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end fade center" aria-labelledby="navbarDropdown">
+							<div class="row row-cols-2">
+							  <li><button class="btn btn-danger my-2 my-sm-0" onclick="rojo()">Rojo</button></li>
+							  <li><button class="btn btn-success my-2 my-sm-0" onclick="verde()">Verde</button></li>
+							  <li><button class="btn btn-primary my-2 my-sm-0" onclick="azul()">Azul</button></li>
+							  <li><button class="btn btn-warning my-2 my-sm-0" onclick="reiniciar()">Base</button></li>
+							</div>
+						</ul>						  
+					</li>  
 				</ul>
 			</div>
 		</div>
@@ -106,34 +119,48 @@
 			<hr>
 			<h2 class="text-center text-primary" id="fsubtitle"><span class="nameSpan">Portfolio</span></h2>
 			<div class="row">
-				<div class="col-md-4">
-					<div class="card mb-4">
-						<img class="card-img-top" src="https://media.discordapp.net/attachments/874104384374591518/1082728339804008448/image.png?width=750&height=468" alt="Proyecto 1">
-						<div class="card-body">
-							<h5 class="card-title">Desarrollo Web</h5>
-							<p class="card-text">En esta categoría se encuentran los proyectos que he realizado en el ámbito del desarrollo de páginas web.</p>
-							<div class="button" id="button-4">
-								<div id="underline"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" style="filter: invert(100%);"></div>
-								<a href="https://usuariozombie.com" target="_blank">Saber más</a>
+				<div class="form-group">
+					<label for="selector-lenguajes"><span class="nameSpan"><b>Lenguajes de programación:</b></span></label>
+					<select class="form-control" id="selector-lenguajes" onChange="filterProjects()">
+						<option value="all">Selecciona un lenguaje de programación</option>
+						<option value="html">HTML</option>
+						<option value="css">CSS</option>
+						<option value="javascript">JavaScript</option>
+						<option value="python">Python</option>
+					</select>
+				</div>
+				
+				<div class="row" id="proyectos">
+					<div class="col-md-4 html css javascript">
+						<div class="card mb-4">
+							<img class="card-img-top" src="https://media.discordapp.net/attachments/874104384374591518/1082728339804008448/image.png?width=750&height=468" alt="Proyecto 1">
+							<div class="card-body">
+								<h5 class="card-title">Desarrollo Web</h5>
+								<p class="card-text">En esta categoría se encuentran los proyectos que he realizado en el ámbito del desarrollo de páginas web.</p>
+								<div class="button" id="button-4">
+									<div id="underline"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" style="filter: invert(100%);"></div>
+									<a href="https://usuariozombie.com" target="_blank">Saber más</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mb-4">
-						<img class="card-img-top" src="https://media.discordapp.net/attachments/874104384374591518/1082732587904139274/image.png?width=669&height=468" alt="Proyecto 2">
-						<div class="card-body">
-							<h5 class="card-title">Aplicaciones</h5>
-							<p class="card-text">En esta categoría se encuentran los proyectos que he realizado en el ámbito del desarrollo de aplicaciones.</p>
-							<div class="button" id="button-4">
-								<div id="underline"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" style="filter: invert(100%);"></div>
-								<a href="https://github.com/usuariozombie/Proyecto360" target="_blank">Saber más</a>
+				
+					<div class="col-md-4 python javascript">
+						<div class="card mb-4">
+							<img class="card-img-top" src="https://media.discordapp.net/attachments/874104384374591518/1082732587904139274/image.png?width=669&height=468" alt="Proyecto 2">
+							<div class="card-body">
+								<h5 class="card-title">Aplicaciones</h5>
+								<p class="card-text">En esta categoría se encuentran los proyectos que he realizado en el ámbito del desarrollo de aplicaciones.</p>
+								<div class="button" id="button-4">
+									<div id="underline"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" style="filter: invert(100%);"></div>
+									<a href="https://github.com/usuariozombie/Proyecto360" target="_blank">Saber más</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="card mb-4">
+				
+					<div class="col-md-4 python">
+						<div class="card mb-4">
 						<img class="card-img-top" src="https://media.discordapp.net/attachments/874104384374591518/1082733065039781948/image_processing20210907-13511-1juj33d.gif?width=624&height=468" alt="Proyecto 3">
 						<div class="card-body">
 							<h5 class="card-title">Bots & IA</h5>
@@ -305,7 +332,7 @@
 	</section>
 
 	<!-- Pie de página -->
-	<footer class="bg-primary">
+	<footer class="bg-primary" id="footer">
 		<!-- Redes sociales -->
 		<div class="container">
 			<div class="row">
