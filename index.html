@@ -265,7 +265,7 @@
 							<div class="form-group row g-3 mt-1 mx-auto">
 								<label for="subject" class="col-sm-2 col-form-label text-primary">Asunto:</label>
 								<div class="col-sm-10">
-									<input type="text" id="subject" class="form-control text-info" name="subject" required />
+									<input type="text" id="subject" class="form-control text-info" name="subject" required onblur="validateOnBlur(this)" />
 								</div>
 							</div>
 			
@@ -275,13 +275,13 @@
 									<div class="input-group-prepend">
 										<div class="input-group-text">@</div>
 									  </div>
-									<input type="email" id="cc" class="form-control text-info" name="cc" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+									  <input type="email" id="cc" class="form-control text-info" name="cc" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onblur="validateOnBlur(this)" />
 								</div>
 							</div>
 			
 							<div class="row g-3 mt-2 mx-auto">
 								<label for="body" class="form-label text-primary">Cuerpo del mensaje: </label> <br />
-								<textarea id="body" class="form-control text-info mt-2 w-10" name="body" placeholder="Aqui va el cuerpo del mensaje..." rows="5" cols="10" style="resize: none;"
+								<textarea id="body" class="form-control text-info mt-2 w-10" name="body" placeholder="Aqui va el cuerpo del mensaje..." rows="5" cols="10" style="resize: none;" onblur="validateOnBlur(this)"
 									required></textarea>
 							</div>
 			
