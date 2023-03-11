@@ -1,0 +1,408 @@
+/*import montserrat font*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+nav {
+  background: linear-gradient(to left, #316eb4, #721899);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a {
+  color: #ffffff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem !important;
+  font-family: 'Lato', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #bc83d4 !important;
+  transition: 0.3s;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nameSpan {
+  /*background: linear-gradient(to left, #316eb4, #721899);*/
+  background: linear-gradient(to left, #316eb4, #721899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.dropdown-toggle {
+  position: relative;
+  z-index: 1001;
+}
+
+.dropdown-menu {
+  background: #316eb4;
+  opacity: 0;
+  display: block;
+  top: 80%;
+  right: 0;
+  transition: all 0.5s;
+}
+
+.dropdown-menu li {
+  margin: 0 !important;
+}
+
+.dropdown-menu button {
+  margin: 0 !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.dropdown-menu a:hover {
+  background: #721899;
+  transition: 0.5s;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+table a {
+  color: #0400ff !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    color: #000000;
+  }
+
+  100% {
+    color: #721899;
+  }
+}
+
+
+#usuariozombie,
+#willardbot,
+#cast,
+#openai,
+#app360,
+#gData,
+#JavaCast {
+  opacity: 0;
+  font-weight: bold;
+}
+
+.form-group:has(option[value=""]:checked)~table thead #usuariozombie {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value=""]:checked)~table thead #willardbot {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value=""]:checked)~table thead #cast {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value=""]:checked)~table thead #openai {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value=""]:checked)~table thead #app360 {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value=""]:checked)~table thead #gData {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value=""]:checked)~table thead #JavaCast {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="javascript"]:checked)~table thead #usuariozombie {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="javascript"]:checked)~table thead #usuariozombie td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="css"]:checked)~table thead #usuariozombie {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="css"]:checked)~table thead #usuariozombie td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="html"]:checked)~table thead #usuariozombie {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="html"]:checked)~table thead #usuariozombie td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="python"]:checked)~table thead #willardbot {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="python"]:checked)~table thead #willardbot td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="python"]:checked)~table thead #cast {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="python"]:checked)~table thead #cast td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="python"]:checked)~table thead #openai {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="python"]:checked)~table thead #openai td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="python"]:checked)~table thead #app360 {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="python"]:checked)~table thead #app360 td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="javascript"]:checked)~table thead #app360 {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="javascript"]:checked)~table thead #app360 td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="html"]:checked)~table thead #app360 {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="html"]:checked)~table thead #app360 td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="css"]:checked)~table thead #app360 {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="css"]:checked)~table thead #app360 td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="lua"]:checked)~table thead #gData {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="lua"]:checked)~table thead #gData td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+.form-group:has(option[value="java"]:checked)~table thead #JavaCast {
+  animation: fadeIn 1s forwards;
+}
+
+.form-group:has(option[value="java"]:checked)~table thead #JavaCast td:nth-child(1) {
+  animation: zoomIn 1s forwards;
+}
+
+
+h2 {
+  font-weight: 700 !important;
+}
+
+#ftitle {
+  padding-top: 5vh;
+}
+
+#fsubtitle {
+  padding: 2vh 0 5vh 0;
+}
+
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.95, 1.05); }
+  50% { transform: scale(1.05, 0.95); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
+#imageHolder {
+  position: relative;
+  height: 400px;
+  animation: gelatine 3s infinite;
+}
+
+#imageHolder img {
+  height: 350px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  50% {
+    transform: translate(-50%, -60%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+#titleText {
+  padding: 6vh 0 0 0;
+}
+
+#titleText h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.navbar-brand {
+  margin-left: 0.5rem;
+}
+
+a {
+  color: #000000;
+}
+
+footer {
+  padding: 4vh 0 1vh 0;
+  background: linear-gradient(to left, #316eb4, #721899);
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  font-variant: petite-caps;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+p {
+  font-weight: 600;
+}
+
+.button {
+  display: inline-flex;
+  background-color: #721899;
+  height: 40px;
+  width: 150px;
+  color: #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+#button-4 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-4 a {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#underline {
+  width: 100%;
+  height: 4.5px;
+  margin-top: 15px;
+  align-self: flex-end;
+  left: -200px;
+  background: #8c00ff;
+  position: absolute;
+  transition: all .3s ease-Out;
+  bottom: 0;
+}
+
+#button-4:hover #underline {
+  left: 0;
+}
+
+@media screen and (min-width:1000px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  #container {
+    width: 50%;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #bc83d4 !important;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 988px) {
+
+  .navbar-nav .nav-link.active,
+  .navbar-nav .show>.nav-link {
+    padding-top: 2rem;
+  }
+
+  .dropdown-menu {
+    background-color: transparent;
+    border: none;
+  }
+
+  .dropdown-divider {
+    background-color: #ffffff;
+  }
+}

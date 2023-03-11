@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<!-- Para cambiar de modo oscuro "dark" a modo normal, simplemente cambiarlo por "light"-->
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description"
+		content="Portfolio personal de Eduardo Pimentel, en el que se muestran mis proyectos y habilidades." />
+	<meta name="keywords" content="html, css, sass, bootstrap, js, portfolio, proyectos" />
+	<meta name="language" content="ES" />
+	<meta name="author" content="eduardo.pimentel@a.vedrunasevilasj.es" />
+	<meta name="robots" content="index,follow" />
+	<meta name="revised" content="Tuesday, February 28th, 2023, 23:00pm" />
+	<meta name="viewport" content="width=device-width, initial scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1" />
+
+	<!-- Añado la fuente Roboto -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/f08d795855.js" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<!-- My css -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<!-- My scripts -->
+	<script type="text/javascript" src="js/app.js" defer></script>
+
+	<!-- Icono al lado del titulo -->
+	<link rel="shortcut icon" href="media/icon/favicon.png" type="image/xpng" />
+
+	<!-- Font awesome for fa icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Titulo -->
+	<title>Portfolio - Eduardo Pimentel Gil-Munilla</title>
+</head>
+
+<body class="bg-light">
+
+	<!-- Barra de navegación -->
+	<nav class="navbar navbar-expand-lg bg-primary sticky-top" id="nav">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#"><img src="./media/img/navicon.png" width="35"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Bienvenida</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Más
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end fade" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#about">Sobre mí</a></li>
+							<li><a class="dropdown-item" href="#tech">Tecnologías</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li><a class="dropdown-item" href="#contacto">Contáctame</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Temas
+						</a>
+						<ul class="dropdown-menu dropdown-menu-end fade center" aria-labelledby="navbarDropdown">
+							<div class="row row-cols-2">
+							  <li><button class="btn btn-danger my-2 my-sm-0" onclick="rojo()">Rojo</button></li>
+							  <li><button class="btn btn-success my-2 my-sm-0" onclick="verde()">Verde</button></li>
+							  <li><button class="btn btn-primary my-2 my-sm-0" onclick="azul()">Azul</button></li>
+							  <li><button class="btn btn-warning my-2 my-sm-0" onclick="reiniciar()">Base</button></li>
+							</div>
+						</ul>						  
+					</li>  
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Sección de proyectos -->
+	<section class="bg-light">
+		<header class="bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 my-4" id="imageHolder">
+						<img src="./media/img/title.png" class="img-fluid" alt="Imagen banner">
+					</div>
+					<div class="col-md-6 my-4" id="titleText">
+						<h1>Bienvenido, soy <span class="nameSpan">Eduardo Pimentel</span></h1>
+						<p>¡Bienvenido a mi web! Soy un estudiante de desarrollo de aplicaciones 
+							multiplataforma apasionado por crear soluciones tecnológicas que sean útiles y 
+							eficientes.
+						</p>
+						<p>
+							Desde que comencé a estudiar esta disciplina, he estado aprendiendo todo lo 
+							que puedo sobre diferentes lenguajes de programación, frameworks y herramientas 
+							de desarrollo. Me encanta resolver problemas y encontrar maneras innovadoras de
+							hacer que las aplicaciones sean más intuitivas y fáciles de usar.
+						</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<span class="anchor" id="portfolio"></span>
+			<br>
+			<hr>
+			<h2 class="text-center text-primary" id="fsubtitle"><span class="nameSpan">Portfolio</span></h2>
+			<div class="row">
+				<div class="form-group">
+					<label for="selector-lenguajes"><span class="nameSpan"><b>Lenguajes de programación:</b></span></label>
+					<select class="form-control" id="selector-lenguajes" onChange="filterProjects()">
+						<option value="all">Selecciona un lenguaje de programación</option>
+						<option value="html">HTML</option>
+						<option value="css">CSS</option>
+						<option value="javascript">JavaScript</option>
+						<option value="python">Python</option>
+					</select>
+				</div>
+				
+				<div class="row" id="proyectos">
+					<div class="col-md-4 html css javascript">
+						<div class="card mb-4">
+							<img class="card-img-top" src="https://media.discordapp.net/attachments/874104384374591518/1082728339804008448/image.png?width=750&height=468" alt="Proyecto 1">
+							<div class="card-body">
+								<h5 class="card-title">Desarrollo Web</h5>
+								<p class="card-text">En esta categoría se encuentran los proyectos que he realizado en el ámbito del desarrollo de páginas web.</p>
+								<div class="button" id="button-4">
+									<div id="underline"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" style="filter: invert(100%);"></div>
+									<a href="https://usuariozombie.com" target="_blank">Saber más</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-md-4 python javascript">
+						<div class="card mb-4">
+							<img class="card-img-top" src="https://media.discordapp.net/attachments/874104384374591518/1082732587904139274/image.png?width=669&height=468" alt="Proyecto 2">
+							<div class="card-body">
+								<h5 class="card-title">Aplicaciones</h5>
+								<p class="card-text">En esta categoría se encuentran los proyectos que he realizado en el ámbito del desarrollo de aplicaciones.</p>
+								<div class="button" id="button-4">
+									<div id="underline"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" style="filter: invert(100%);"></div>
+									<a href="https://github.com/usuariozombie/Proyecto360" target="_blank">Saber más</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-md-4 python">
+						<div class="card mb-4">
+						<img class="card-img-top" src="https://media.discordapp.net/attachments/874104384374591518/1082733065039781948/image_processing20210907-13511-1juj33d.gif?width=624&height=468" alt="Proyecto 3">
+						<div class="card-body">
+							<h5 class="card-title">Bots & IA</h5>
+							<p class="card-text">En esta categoría se encuentran los proyectos que he realizado en el ámbito de la inteligencia artificial y los bots.</p>
+							<div class="button" id="button-4">
+								<div id="underline"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" style="filter: invert(100%);"></div>
+								<a href="https://github.com/usuariozombie/openai-discord-chatbot" target="_blank">Saber más</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	  
+
+	<!-- Sección de acerca de -->
+	<section class="bg-light">
+		<div class="container">
+			<span class="anchor" id="about"></span>
+			<br>
+			<hr>
+			<h2 class="text-center text-primary" id="fsubtitle"><span class="nameSpan">Sobre mí</span></h2>
+			<div class="row">
+				<div class="col-md-6">
+					<p>Llevo adquiriendo conocimientos de programación desde los 16 años, me he dedicado a ponerlos en práctica en varios proyectos desde entonces, se pueden destacar varias etapas de desarrollo dentro de mi vida. Podría decir que mi inicio fue con LUA, un lenguaje de programación que se utiliza en el juego Garry's Mod, en el cual sobre todo me dediqué a editar plugins ya que mi nivel no era muy avanzado.</p>
+					<p>Más tarde aprendí Python y me dediqué a crear bots para Discord que están disponibles en mi GitHub, también creé aplicaciones de escritorio con Python muy básicas. Más tarde aprendí HTML y CSS y desarrollé páginas web. A día de hoy estoy aprendiendo JavaScript, he aprendido Java y estoy desarrollándome un poco más en LUA además de querer aprender C# y C++.</p>
+				</div>
+				<div class="col-md-6">
+					<p>Mi experiencia en diseño web es amplia, con HTML5 y CSS3 puedo crear páginas web de forma rápida y eficiente, además de que con JavaScript puedo añadirle funcionalidad a las mismas aunque aún estoy desarrollándome en este lenguaje.</p>
+					<p>Mi lenguaje de programación favorita es Python, aunque también tengo experiencia en Java y quiero introducirme en C++ y C#. Además de esto, tengo experiencia en desarrollo de aplicaciones de escritorio con Java y Python y desarrollo de bots de Discord.</p>
+					<p>Me queda desarrollarme aún más en frameworks como NodeJS, Vue y React en los que he realizado tanto cursos como proyectos y los veo bastante útiles para futuro. Además de muchas otras tecnologías que me gustaría dominar en un futuro.</p>
+				</div>
+			</div>
+			
+			<span class="anchor" id="tech"></span>
+
+			<div class="form-group">
+				<label for="selector-lenguajes"><span class="nameSpan"><b>Lenguajes de programación:</b></span></label>
+				<select class="form-control" id="selector-lenguajes">
+					<option value="">Selecciona un lenguaje de programación</option>
+					<option value="html">HTML</option>
+					<option value="css">CSS</option>
+					<option value="javascript">JavaScript</option>
+					<option value="python">Python</option>
+					<option value="java">Java</option>
+					<option value="lua">Lua</option>
+				</select>
+			</div>
+	
+			<!--Tabla con filas y columnas de bootstrap marcadas -->
+			<table class = "table table-bordered table-hover table-sm">
+				<!-- tabla con cada proyecto hecho por mi en github (usuariozombie.com, willard bot, cast, openai discord bot, app360, gData) -->
+				<thead>
+					<tr>
+						<th scope="col">Nombre</th>
+						<th scope="col">Descripción</th>
+						<th scope="col">Lenguaje</th>
+						<th scope="col">Ver</th>
+					</tr>
+	
+					<tr id="usuariozombie">
+						<td>usuariozombie.com</td>
+						<td>Este es un proyecto que hice para mi página web personal, en el que se utilizan diferentes lenguajes de programación como HTML, CSS, JavaScript y PHP.</td>
+						<td>HTML, CSS, JavaScript</td>
+						<td><a href="http://usuariozombie.com" target="_blank">Ver</a></td>
+					</tr>
+	
+					<tr id="willardbot">
+						<td>Willard Bot</td>
+						<td>Este es un proyecto que hice para el servidor de Discord de Willard Networks, una empresa de Noruega con más de 2000 clientes.</td>
+						<td>Python</td>
+						<td><a href="https://github.com/usuariozombie/WillardBot" target="_blank">Ver</a></td>
+					</tr>
+	
+					<tr id="cast">
+						<td>Cast</td>
+						<td>Este es un proyecto que hice para cualquier servidor de Discord, que utiliza una API para obtener pronósticos climáticos.</td>
+						<td>Python</td>
+						<td><a href="https://github.com/usuariozombie/Cast" target="_blank">Ver</a></td>
+					</tr>
+	
+					<tr id="openai">
+						<td>ChatGPT Bot</td>
+						<td>Este es un proyecto que hice para mi servidor de Discord, en el que se utiliza Python de manera conjunta con la API de OpenAI.</td>
+						<td>Python</td>
+						<td><a href="https://github.com/usuariozombie/openai-discord-chatbot" target="_blank">Ver</a></td>
+					</tr>
+	
+					<tr id="app360">
+						<td>App360</td>
+						<td>Este es un proyecto que hice para Sistemas Informáticos en 1º DAM, consta de un Bot de Discord, una API y un formulario web.</td>
+						<td>HTML, CSS, JavaScript, Python, Flask, PHP</td>
+						<td><a href="https://github.com/usuariozombie/Proyecto360" target="_blank">Ver</a></td>
+					</tr>
+	
+					<tr id="JavaCast">
+						<td>JavaCast</td>
+						<td>Este es un proyecto que de prueba con Java, en una consola muestra pronósticos climáticos, utiliza una API para obtener pronósticos climáticos.</td>
+						<td>Java</td>
+						<td><a href="https://github.com/usuariozombie/JavaWeatherForecast" target="_blank">Ver</a></td>
+					</tr>
+	
+					<tr id="gData">
+						<td>gData</td>
+						<td>Este es un plugin que desarrollé en Garry's Mod, que manda datos de la partida a tu API haciendo un POST</td>
+						<td>Lua</td>
+						<td><a href="https://github.com/usuariozombie/gData" target="_blank">Ver</a></td>
+					</tr>
+				</thead>
+			</table>
+
+		</div>
+	</section>
+
+	<!-- Sección de contacto -->
+	<section class="bg-light">
+		<span class="anchor" id="contacto"></span>
+		<br>
+		<div class="container">
+			<hr>
+			<h2 class="text-center text-primary" id="fsubtitle"><span class="nameSpan">Contacto</span></h2>
+			<div class="row">
+				<div class="col-md-6">
+					<form action="mailto:eduardo.pimentel@a.vedrunasevillasj.es" method="get" class="mt-2 mx-auto">
+						<fieldset class="form-row reset p-4 align-items-center border border-primary ">
+							<legend class="reset border border-primary px-2 py-1">Contáctame</legend>
+			
+							<div class="form-group row g-3 mt-1 mx-auto">
+								<label for="subject" class="col-sm-2 col-form-label text-primary">Asunto:</label>
+								<div class="col-sm-10">
+									<input type="text" id="subject" class="form-control text-info" name="subject" required onblur="validateOnBlur(this)" />
+								</div>
+							</div>
+			
+							<div class="form-group row g-3 mt-1 mx-auto">
+								<label for="cc" class="col-sm-2 col-form-label text-primary">CC:</label>
+								<div class="col input-group mb-2">
+									<div class="input-group-prepend">
+										<div class="input-group-text">@</div>
+									  </div>
+									  <input type="email" id="cc" class="form-control text-info" name="cc" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onblur="validateOnBlur(this)" />
+								</div>
+							</div>
+			
+							<div class="row g-3 mt-2 mx-auto">
+								<label for="body" class="form-label text-primary">Cuerpo del mensaje: </label> <br />
+								<textarea id="body" class="form-control text-info mt-2 w-10" name="body" placeholder="Aqui va el cuerpo del mensaje..." rows="5" cols="10" style="resize: none;" onblur="validateOnBlur(this)"
+									required></textarea>
+							</div>
+			
+							<div class="row g-3 mt-2 w-25 mx-auto">							<div class="button" id="button-4">
+								<div id="underline"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" style="filter: invert(100%);"></div>
+									<input id="sendBttn" class="btn btn-lg text-white" type="submit" value="Enviar" />
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<p>Si quieres contactar conmigo, puedes hacerlo a través de este formulario, ya sea para pedirme ayuda, para hacerme una pregunta sobre
+						algo que no entiendas de alguno de mis proyectos o para contratar mis servicios. También puedes contactar conmigo a través de mis redes sociales
+						en la parte inferior de la página.
+					</p>
+				</div>
+			</div>
+		</div>
+		<br>
+	</section>
+
+	<!-- Pie de página -->
+	<footer class="bg-primary" id="footer">
+		<!-- Redes sociales -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+				  <ul class="list-inline horizontal-list">
+					<li class="list-inline-item"><a href="https://twitter.com/usuariozombie" target="_blank" class="text-light"><i class="fa-brands fa-twitter"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.instagram.com/edupime04/" target="_blank" class="text-light"><i class="fa-brands fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.youtube.com/channel/UCN1JLuqjly6w4eYFi40RDPA" target="_blank" class="text-light"><i class="fa-brands fa-youtube"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.linkedin.com/in/eduardopimentelgil-munilla/" target="_blank" class="text-light"><i class="fa-brands fa-linkedin-in"></i></a></li>
+					<li class="list-inline-item"><a href="https://www.github.com/usuariozombie" target="_blank" class="text-light"><i class="fa-brands fa-github"></i></a></li>
+				  </ul>
+				</div>
+				<div class="col-md-4">
+					<p class="text-center text-light">© 2020 Eduardo Pimentel Gil-Munilla</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
